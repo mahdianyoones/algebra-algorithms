@@ -17,6 +17,6 @@ while quotient > divisor:
     divisor += 1
 
 if(foundFactor > 0):
-    print(colored(str(number) + ' is not prime! Found factor: ' + str(divisor), 'blue'))
+    print(colored(str(number) + ' is a composite number. Found factor: ' + str(divisor), 'blue'))
 else:
     print(colored(str(number) + ' is prime!', 'green'))
