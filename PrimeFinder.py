@@ -11,6 +11,4 @@ while i <= number:
     factors = NumFactors.getFactors(i)
     if(len(factors) == 2):
         print(colored(str(i) + ' is a prime. Factors', 'green'), colored(factors, 'green'))
-    else:
-        print(i, 'is not a prime. Factors', factors)
     i += 1
