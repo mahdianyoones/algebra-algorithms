@@ -7,8 +7,12 @@ factors = NumFactors.getFactors(number)
 
 i = 2
 
+foundPrimes = []
+
 while i <= number:
     factors = NumFactors.getFactors(i)
     if(len(factors) == 2):
-        print(colored(str(i) + ' is a prime. Factors', 'green'), colored(factors, 'green'))
+        foundPrimes.append(i)
     i += 1
+
+print('Primes found:', foundPrimes)
