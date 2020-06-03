@@ -1,9 +1,15 @@
+import sys
 from termcolor import colored
 
 number = int(input('Enter a counting number: '))
 
-if(number < 2):
-    print(colored('Number can\'t be smaller than 2!', 'red'))
+if(number == 1):
+    print('1 is neither prime nor composite.')
+    sys.exit(0)
+
+if(number < 1):
+    print(colored('Number can\'t be smaller than 1!', 'red'))
+    sys.exit(0)
 
 divisor = 2
 quotient = number
